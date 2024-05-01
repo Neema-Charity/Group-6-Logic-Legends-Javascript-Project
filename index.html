@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="main-header">TASKIFY</h1>
-        <nav><a href="#add-task">Add Task</a> <br> <a href="#view-task">Search Task</a></nav>
+    <header id="main-header">
+        <h1 id="header">TASKIFY</h1>
+        <!-- <nav><a href="#add-task">Add Task</a> <br> <a href="#view-task">Search Task</a></nav> -->
+        <div id="search-bar">
+            <input type="text" placeholder="Search task here ..." class="search-task">
+        </div>
     </header>
     <main>
         <div>
-            <div>
-                <input type="text" placeholder="Search task here ..." class="search-task">
-            </div>
             <section id="form-input">
                 <h2>Add a New Task</h2>
                 <form>
@@ -26,7 +26,7 @@
                     <input type="text" id="task-title" name="task-title" required>
 
                     <label for="task-description">Description:</label>
-                    <input type="text" id="task-descrirption" name="task-description" required>
+                    <input type="text" id="task-description" name="task-description" required>
 
                     <label for="task-due-date">Due Date:</label>
                     <input type="date" id="task-due-date" name="task-due-date">
@@ -61,7 +61,7 @@
 
     </aside>
     </div>
-    <footer>
+    <footer id="footer">
         <p>© 2024 Taskify</p>
     </footer>
     <script src="index.js"></script>

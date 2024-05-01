@@ -1,17 +1,26 @@
-#main-header{
-font-size: 50px;
-text-align: center;
-font-family:'Courier New', Courier, monospace;
+#main-header {
+    background-color: black;
 }
+
+#header {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+#search-bar {
+    text-align: center;
+}
+
 .search-task {
-    padding: 5px;
-    width: 100%;
+    border-radius: 10px;
+    width: 200px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #form-input {
-    /* width: 200px; */
-    /* height: 50px; */
     text-align: center;
     background-color: #eaeaea;
     border: 2px solid #333;
@@ -25,8 +34,18 @@ font-family:'Courier New', Courier, monospace;
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+    background-color: black;
+    color: white;
 }
 
 .button {
     text-align: center;
+}
+
+#footer {
+    background-color: #eaeaea;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
 }

@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Six</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Group Six Javascript Project</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body><header>
-    <h1>eereeeeeee</h1>
+    <h1>TASKIFY</h1>
+    <nav><a href="#add-task">Add Task</a>  <br>   <a href="#view-task">Search Task</a></nav>
 </header>
+<main><div>
+    <section>
+        <h2>Add a New Task</h2>
+        <form>
+            <label for="task-title">Title:</label>
+            <input type="text" id="task-title" name="task-title" required>
+            
+            <label for="task-description">Description:</label>
+            <textarea id="task-description" name="task-description" required></textarea>
+            
+            <label for="task-due-date">Due Date:</label>
+            <input type="date" id="task-due-date" name="task-due-date" required>
+            <button type="submit">Add Task</button>
+        </form>
+    </section>
+</main>
+    <aside>
+    
+        <h2>Tasks List</h2>
+
+</aside>
+</div>
+<footer>
+    <p>© 2024 Taskify</p>
+</footer>
     <script src="index.js"></script>
 </body>
 </html>

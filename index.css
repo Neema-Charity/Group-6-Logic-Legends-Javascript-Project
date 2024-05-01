@@ -1,0 +1,32 @@
+#main-header{
+font-size: 50px;
+text-align: center;
+font-family:'Courier New', Courier, monospace;
+}
+.search-task {
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#form-input {
+    /* width: 200px; */
+    /* height: 50px; */
+    text-align: center;
+    background-color: #eaeaea;
+    border: 2px solid #333;
+    padding: 10px;
+    width: 100%;
+}
+
+#submit-button {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button {
+    text-align: center;
+}

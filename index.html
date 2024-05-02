@@ -14,7 +14,7 @@
         <h1 id="header">TASKIFY</h1>
         <!-- <nav><a href="#add-task">Add Task</a> <br> <a href="#view-task">Search Task</a></nav> -->
         <div id="search-bar">
-            <input type="text" placeholder="Search task here ..." class="search-task">
+            <input type="text" placeholder="Search task here ..." class="search-task" id="search-task-input">
         </div>
     </header>
     <main>
@@ -34,6 +34,7 @@
             </section>
             <div class="button">
                 <button type="submit" id="submit-button">Add Task</button>
+                <button id="generate-report-button">Generate Report</button>
             </div>
         </div>
     </main>
@@ -45,10 +46,11 @@
             <table class="table table-bordered table-striped-columns table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col">ID</th>
                         <th scope="col">Task Title</th>
                         <th scope="col">Task Description</th>
                         <th scope="col">Due Date</th>
+                        <th>Edit Task</th>
                         <th>Delete Task</th>
                     </tr>
                 </thead>
@@ -57,9 +59,11 @@
                 </tbody>
         </div>
         </table>
-
-
     </aside>
+    <div id="report-section">
+        <h2>Task Report</h2>
+        <ul id="report-list"></ul>
+    </div>
     </div>
     <footer id="footer">
         <p>© 2024 Taskify</p>

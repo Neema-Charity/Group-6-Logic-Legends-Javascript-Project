@@ -11,9 +11,10 @@ async function populateTaskCard() {
         const title = document.getElementById("task-title").value;
         const description = document.getElementById("task-description").value;
         const dueDate = document.getElementById("task-due-date").value;
+        const priority = document.getElementById("task-priority").value;
 
         // Post the new task to the database
-        await postCard(title, description, dueDate);
+        await postCard(title, description, dueDate, priority);
 
         // Refresh the tasks list
         await refreshTasksList();
@@ -24,10 +25,11 @@ async function populateTaskCard() {
 }
 
 // Function to post a new task to the database
-async function postCard(title, description, dueDate) {
+async function postCard(title, description, dueDate, priority) {
     const task = {
         title: title,
         description: description,
+        priority: priority,
         dueDate: dueDate
     };
 
@@ -59,6 +61,7 @@ async function refreshTasksList() {
                 <div> <strong>Title:</strong> ${task.title} </div>
                 <div> <strong>Description:</strong> ${task.description} </div>
                 <div> <strong>Due Date:</strong> ${task.dueDate}  </div>
+                <div> <strong>Priority Level:</strong> ${task.priority}  </div>
                 <div class="delete-button-container">
                     <button class="delete-button" id="${task.id}">Delete</button>
                 </div>

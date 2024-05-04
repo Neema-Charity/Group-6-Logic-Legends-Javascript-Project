@@ -11,16 +11,16 @@ function populateTaskCard() {
 
         // To Create a new card element
         const newCard = document.createElement("div");
-        newCard.classList.add("card");
+        newCard.className = "card";
 
         // Populate the card element with the input field values
         newCard.innerHTML = `
-            <div class="card-content">
-                <strong>Title:</strong> <br> ${title}<br>
-                <strong>Description:</strong> <br> ${description}<br>
-                <strong>Due Date:</strong> <br> ${dueDate} <br>
+            <div className="card-content">
+                <div> <strong>Title:</strong> <br> ${title} </br> </div>
+                <div> <strong>Description:</strong> <br> ${description}<br> </div>
+                <div> <strong>Due Date:</strong> <br> ${dueDate} <br> </div>
                 <div class="delete-button-container">
-                <button class="delete-button">Delete</button>
+                  <button class="delete-button">Delete</button>
                 </div>
             </div>
         `;

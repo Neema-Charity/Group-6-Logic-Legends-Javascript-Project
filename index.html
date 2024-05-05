@@ -3,69 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Six Javascript Project</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Group Six JavaScript Project</title>
 </head>
 
 <body>
-    <header id="main-header">
-        <h1 id="header">TASKIFY</h1>
-        <!-- <nav><a href="#add-task">Add Task</a> <br> <a href="#view-task">Search Task</a></nav> -->
-        <div id="search-bar">
-            <input type="text" placeholder="Search task here ..." class="search-task" id="search-task-input">
-        </div>
+    <header>
+        <h1>TASKIFY</h1>
+        <input type="text" id="search-task" placeholder="Search tasks by Title" oninput="searchTasks(event)">
     </header>
     <main>
-        <div>
-            <section id="form-input">
-                <h2>Add a New Task</h2>
-                <form>
-                    <label for="task-title">Title:</label>
-                    <input type="text" id="task-title" name="task-title" required>
-
-                    <label for="task-description">Description:</label>
-                    <input type="text" id="task-description" name="task-description" required>
-
-                    <label for="task-due-date">Due Date:</label>
-                    <input type="date" id="task-due-date" name="task-due-date">
-                </form>
-            </section>
-            <div class="button">
+        <section>
+            <h2>Add a New Task</h2>
+            <form id="add-task-form">
+                <label for="task-title">Title:</label>
+                <input type="text" id="task-title" name="task-title" required>
+                <label for="task-description">Description:</label>
+                <textarea id="task-description" name="task-description" required></textarea>
+                <label for="task-priority">Priority Level:</label>
+                <input type="text" id="task-priority" name="task-priority" placeholder="Insert a priority level between 1 and 5">
+                <label for="task-due-date">Due Date:</label>
+                <input type="date" id="task-due-date" name="task-due-date" required>
                 <button type="submit" id="submit-button">Add Task</button>
                 <button id="generate-report-button">Generate Report</button>
-            </div>
-        </div>
+            </form>
+        </section>
+        <section>
+            <h2>Tasks List</h2>
+            <aside id="tasks-list">
+                <!-- Task cards will be dynamically generated here -->
+            </aside>
+        </section>
     </main>
-    <aside>
-
-        <h2>Tasks List</h2>
-
-        <div>
-            <table class="table table-bordered table-striped-columns table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Task Title</th>
-                        <th scope="col">Task Description</th>
-                        <th scope="col">Due Date</th>
-                        <th>Edit Task</th>
-                        <th>Delete Task</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Dynamically populate the table rows using JavaScript -->
-                </tbody>
-        </div>
-        </table>
-    </aside>
-    <div id="report-section">
-        <h2>Task Report</h2>
-        <ul id="report-list"></ul>
-    </div>
-    </div>
-    <footer id="footer">
+    <footer>
         <p>© 2024 Taskify</p>
     </footer>
     <script src="index.js"></script>

@@ -12,39 +12,31 @@
 <body>
     <header>
         <h1>TASKIFY</h1>
-        <input type="text" id="search-task" placeholder="Search tasks by Title" oninput="filterTask()">
+        <input type="text" id="search-task" placeholder="Search tasks by Title" oninput="searchTasks(event)">
     </header>
     <main>
-        <div>
-            <figure class="card">
-                <section>
-                    <h2>Add a New Task</h2>
-                    <form id="add-task-form">
-                        <label for="task-title">Title:</label>
-                        <input type="text" id="task-title" name="task-title" required>
-                        <label for="task-description">Description:</label>
-                        <textarea id="task-description" name="task-description" required></textarea>
-                        <label for="task-priority">Priority Level:</label>
-                        <input type="text" id="task-priority" name="task-priority"
-                            placeholder="Insert a priority level between 1 and 5">
-                        <label for="task-due-date">Due Date:</label>
-                        <input type="date" id="task-due-date" name="task-due-date" required>
-                        <button type="submit" id="submit-button">Add Task</button>
-                    </form>
-                </section>
-            </figure>
-            <figure class="card">
-                <aside>
-                    <h2>Tasks List</h2>
-                    <ul id="tasks-list">
-                        <li>Task 1</li>
-                        <li>Task 2</li>
-                        <li>Task 3</li>
-                        <li>Task 4</li>
-                    </ul>
-                </aside>
-            </figure>
-        </div>
+        <section>
+            <h2>Add a New Task</h2>
+            <form id="add-task-form">
+                <label for="task-title">Title:</label>
+                <input type="text" id="task-title" name="task-title" required>
+                <label for="task-description">Description:</label>
+                <textarea id="task-description" name="task-description" required></textarea>
+                <label for="task-priority">Priority Level:</label>
+                <input type="text" id="task-priority" name="task-priority"
+                    placeholder="Insert a priority level between 1 and 5">
+                <label for="task-due-date">Due Date:</label>
+                <input type="date" id="task-due-date" name="task-due-date" required>
+                <button type="submit" id="submit-button">Add Task</button>
+                <button id="generate-report-button">Generate Report</button>
+            </form>
+        </section>
+        <section>
+            <h2>Tasks List</h2>
+            <aside id="tasks-list">
+                <!-- Task cards will be dynamically generated here -->
+            </aside>
+        </section>
     </main>
     <footer>
         <p>© 2024 Taskify</p>

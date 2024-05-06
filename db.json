@@ -1,11 +1,39 @@
 {
-    "tasks": [
-      {
-        "id": "d790",
-        "title": "Moringa",
-        "description": "Project",
-        "priority": "5",
-        "dueDate": "2024-05-04"
-      }
-    ]
-  }
+  "tasks": [
+    {
+      "title": "Moringa School",
+      "description": "Project Documentation",
+      "dueDate": "2024-05-04",
+      "priority": "4",
+      "id": "d790"
+    },
+    {
+      "title": "Tumaini School",
+      "description": "Math Contest",
+      "dueDate": "2023-05-04",
+      "priority": "4",
+      "id": "d791"
+    },
+    {
+      "title": "MMA",
+      "description": "UFC",
+      "dueDate": "2024-06-13",
+      "priority": "2",
+      "id": "d792"
+    },
+    {
+      "title": "Ecitizen",
+      "description": "Documentation",
+      "dueDate": "2021-05-11",
+      "priority": "4",
+      "id": "d793"
+    },
+    {
+      "title": "Flatiron School",
+      "description": "Project ",
+      "dueDate": "2020-11-04",
+      "priority": "3",
+      "id": "d794"
+    }
+  ]
+}

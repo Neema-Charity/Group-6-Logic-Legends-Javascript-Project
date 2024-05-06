@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // Function to populate task cards
 // async function populateTaskCard() {
 //     // Select necessary elements
@@ -101,6 +102,8 @@
 // refreshTasksList(); 
 // attachDeleteEventListeners();
 
+=======
+>>>>>>> origin/report
 // Function to populate task cards
 async function populateTaskCard() {
     // Select necessary elements
@@ -330,3 +333,8 @@ generateReportButton.addEventListener("click", generateReport);
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/report

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // // Function to populate task cards
 // async function populateTaskCard() {
 //     // Select necessary elements
@@ -102,8 +102,7 @@
 // refreshTasksList(); 
 // attachDeleteEventListeners();
 
-=======
->>>>>>> origin/report
+
 // Function to populate task cards
 async function populateTaskCard() {
     // Select necessary elements
@@ -332,9 +331,3 @@ const generateReportButton = document.getElementById("generate-report-button");
 generateReportButton.addEventListener("click", generateReport);
 
 
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/report
